@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/AllInfo/Main.css'>
+    <title>Jupiter</title>
+    
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted >
+        <source src="/videos/Mercury.mp4" type="video/mp4">
+    </video>
+
+    <div class="heading">
+        <h1 class="h1">Jupiter</h1>
+    </div>
+
+    <div class="main-text">
+        <div>
+            <h2 class="heading-text">About</h2>
+            <p class="about-text">
+                Jupiter is the fifth planet from the Sun and the largest of all the solar system planets. It was named after the king of the gods in Roman mythology. With an apparent magnitude of about -2, it is easily visible to the naked eye. In fact, it is the third brightest object in our night sky.
+                <br>
+                Jupiter is roughly 142,984 km (88,846 mi) across. With that size, we can put 11 Earths side by side along its equator. It is also the most massive planet. If we combine all the seven other planets, Jupiter would still be twice as massive. A day on Jupiter is only 10 hours long—the shortest in the solar system. A year on this giant planet is much longer, taking about 12 Earth years.
+            </p>
+        </div>
+
+        <div style="display: flex; width: 100%;">
+        <div style="padding: 0 3%; width: 40%;">
+            <h1>Facts</h1>
+            <table>
+                <tr>
+                    <td>Mass: </td>
+                    <td>1,898,130,000,000,000,000 billion kg (317.83 x Earth)</td>
+                </tr><tr>
+                    <td>Equatorial Diameter: </td>
+                    <td>142,984 km</td>
+                </tr><tr>
+                    <td>Polar Diameter: </td>
+                    <td>133,709 km</td>
+                </tr><tr>
+                    <td>Equatorial Circumference: </td>
+                    <td>439,264 km</td>
+                </tr><tr>
+                    <td>Known Moons: </td>
+                    <td>67</td>
+                </tr><tr>
+                    <td>Notable Moons: </td>
+                    <td>Io, Europa, Ganymede, & Callisto</td>
+                </tr><tr>
+                    <td>Orbit Distance: </td>
+                    <td>778,340,821 km (5.20 AU)</td>
+                </tr><tr>
+                    <td>Orbit Period: </td>
+                    <td>4,332.82 Earth days (11.86 Earth years)</td>
+                </tr><tr>
+                    <td>Surface Temperature: </td>
+                    <td>-108°C</td>
+                </tr><tr>
+                    <td>First Record: </td>
+                    <td>7th or 8th Century BC</td>
+                </tr><tr>
+                    <td>Recorded By: </td>
+                    <td>Babylonian astronomers</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fun-facts" style="width: 60%">
+            <h3 style="font-size: 22px;">Interesting facts about the Jupiter</h3>
+            <button type="button" class="collapsible">The first recorded sighting of Jupiter were by the ancient Babylonians in around 7th or 8th BC.</button>
+            <div class="content">
+                <p>It is named for Jupiter, the king of the Roman gods and god of the Sky. The Greek equivalent is Zeus, god of thunder. For the Mesopotamians, he was the god Marduk and patron of the city of Babylon. Germanic tribes saw the planet as Donar, also known as Thor.</p>
+            </div>
+
+            <button type="button" class="collapsible">Jupiter has the shortest day of the eight planets.</button>
+            <div class="content">
+                <p>The planet rotates very Jupiter rotates very quickly, turning on its axis once every 9 hours and 55 minutes. This rapid rotation is also what causes the flattening effect of the planet, which is why it has an oblate shape.</p>
+            </div>
+
+            <button type="button" class="collapsible">One orbit of the Sun takes Jupiter 11.86 Earth years.</button>
+            <div class="content">
+                <p> This means that when viewed from Earth, the planet appears to move very slowly in the sky. It takes months for Jupiter to move from one constellation to the next.</p>
+            </div>
+
+            <button type="button" class="collapsible">Jupiter has at least 67 moons in satellite around the planet.</button>
+            <div class="content">
+                <p>This includes the four large moons called the Galilean moons that were first discovered by Galileo Galilei in 1610.</p>
+            </div>
+
+            <button type="button" class="collapsible">Jupiter has a very strong magnetic field. </button>
+            <div class="content">
+                <p>This is around 14 times stronger than the magnetic field found on Earth – the largest of any planet in the solar system.</p>
+            </div>
+
+            <button type="button" class="collapsible">Jupiter is the fourth brightest object in our solar system.</button>
+            <div class="content">
+                <p>After the Sun, the Moon and Venus, Jupiter is the brightest and is one of five planets which can be seen by naked eye from Earth.</p>
+            </div>
+
+            <button type="button" class="collapsible">Eight spacecraft have visited Jupiter so far.</button>
+            <div class="content">
+                <p>Those are Pioneer 10 and 11, Voyager 1 and 2, Galileo, Cassini, Ulysses and the New Horizons mission. Another mission, Juno, is set to arrive at Jupiter some time around July 2016. There are also plans for future missions to focus on the Jovian moons of Jupiter – Europa, Ganymede and Callisto – and their possible subsurface oceans.</p>
+            </div>
+
+            
+        </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

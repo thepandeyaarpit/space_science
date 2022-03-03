@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
+        body{ margin: 0; padding: 0; max-height: 100vh; font-family: 'Poppins', sans-serif; }
+        #output{   margin: 2%;}
+        #image{  cursor: pointer; }
+        #anotherPart{  align-items: center; justify-content: center;  color: rgb(26, 26, 26); }
+        #copyright{ float: right; font-weight: bold; font-size: 15px; }
+        #copyright:hover{ color: #444; }
+        .heading{ margin: 0 4%; font-size: 35px; color: #555; border-bottom: 1px solid #555; }
+        @media(max-width: 426px){
+            #explanation{
+                height: 250px;
+                overflow: scroll;
+                font-size: 11px;
+            }
+            .heading{
+                font-size: 15px;
+            }
+            #title{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">Picture of the Day</h2>
+    <div id="output">
+        <div id="anotherPart">
+            <h1 id="title"></h1>
+            <p id="explanation"></p>
+            <p id="copyright"></p>
+        </div>
+        <div id="image">
+            <thing id="img"></thing>
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $.ajax({
+            url:"https://api.nasa.gov/planetary/apod?api_key=dhQruzG9SGhflRVyOt6tetja9ahV6H1PkRvNf8Fn",
+            success: function(whatyougot){
+                document.getElementById("img").innerHTML = "<img src='"+whatyougot.url+"' style='width:100%' />";
+                document.getElementById("title").innerHTML=whatyougot.title;
+                document.getElementById("explanation").innerHTML=whatyougot.explanation; 
+                document.getElementById("copyright").innerHTML="By: " + whatyougot.copyright;
+            }
+        })
+    </script>
+</body>
+</html>
+
+ 

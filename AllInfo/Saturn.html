@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/AllInfo/Main.css'>
+    <title>Saturn</title>
+    
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted >
+        <source src="/videos/Mercury.mp4" type="video/mp4">
+    </video>
+
+    <div class="heading">
+        <h1 class="h1">Saturn</h1>
+    </div>
+
+    <div class="main-text">
+        <div>
+            <h2 class="heading-text">About</h2>
+            <p class="about-text">
+                We know Saturn as the “ringed planet.” It is the sixth planet from the Sun, located about 1.5 billion kilometers away. It was named after the Roman god of agriculture, whose Greek counterpart is Cronus.
+                <br>
+                Saturn is the second-largest planet, and like Jupiter, it is a gas giant with no solid surface. It measures roughly 120,536 km (74,897 mi) across, more than 9 times larger than Earth. The temperature on this planet is very cold. It also has extreme pressure and storms like those in Jupiter.
+            </p>
+        </div>
+
+        <div style="display: flex; width: 100%;">
+        <div style="padding: 0 3%; width: 40%;">
+            <h1>Facts</h1>
+            <table>
+                <tr>
+                    <td>Mass: </td>
+                    <td>568,319,000,000,000,000 billion kg (95.16 x Earth)</td>
+                </tr><tr>
+                    <td>Equatorial Diameter: </td>
+                    <td>120,536 km</td>
+                </tr><tr>
+                    <td>Polar Diameter: </td>
+                    <td>108,728 km</td>
+                </tr><tr>
+                    <td>Equatorial Circumference: </td>
+                    <td>365,882 km</td>
+                </tr><tr>
+                    <td>Known Moons: </td>
+                    <td>62</td>
+                </tr><tr>
+                    <td>Notable Moons: </td>
+                    <td>Titan, Rhea & Enceladus</td>
+                </tr><tr>
+                    <td>Orbit Distance: </td>
+                    <td>1,426,666,422 km (9.58 AU)</td>
+                </tr><tr>
+                    <td>Orbit Period: </td>
+                    <td>10,755.70 Earth days (29.45 Earth years)</td>
+                </tr><tr>
+                    <td>Surface Temperature: </td>
+                    <td>-139 °C</td>
+                </tr><tr>
+                    <td>First Record: </td>
+                    <td>8th Century BC</td>
+                </tr><tr>
+                    <td>Recorded By: </td>
+                    <td>Assyrians</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fun-facts" style="width: 60%">
+            <h3 style="font-size: 22px;">Interesting facts about the Saturn</h3>
+            <button type="button" class="collapsible">Saturn is the sixth planet from the Sun,</button>
+            <div class="content">
+                <p>and last of the planets known to ancient civilizations. It was known to the Babylonians and Far Eastern observer. </p>
+            </div>
+
+            <button type="button" class="collapsible">Saturn is one of five planets able to be seen with the naked eye.</button>
+            <div class="content">
+                <p>It is also the fifth brightest object in the solar system. </p>
+            </div>
+
+            <button type="button" class="collapsible">In Roman mythology Saturn was the father of Jupiter, king of the gods.</button>
+            <div class="content">
+                <p>This relationship makes sense given that the planets Saturn and Jupiter are similar in so many respects, including size and composition. The Greek counterpart is known as Cronus. </p>
+            </div>
+
+            <button type="button" class="collapsible">The most common nickname for Saturn is “The Ringed Planet”</button>
+            <div class="content">
+                <p> a nickname arising from the large, beautiful and extensive ring system that encircles the planet. These rings are mostly made from chunks of ice and carbonaceous dust. They stretch out more than 12,700 km from the planet but are only a mere 20 meters thick. </p>
+            </div>
+
+            <button type="button" class="collapsible">Saturn gives off more energy than it receives from the Sun</button>
+            <div class="content">
+                <p>This unusual quality is believed to be generated from the gravitational compression of the planet combined with the friction from large amount of helium found within its atmosphere. </p>
+            </div>
+
+            <button type="button" class="collapsible">It takes Saturn 29.4 Earth years to orbit the Sun.</button>
+            <div class="content">
+                <p>This slow movement against a backdrop of stars led to the planet being nicknamed “Lubadsagush” – or “oldest of the old” – by the ancient Assyrians. </p>
+            </div>
+
+            <button type="button" class="collapsible">Saturn has been visited by four spacecraft.</button>
+            <div class="content">
+                <p> These are Pioneer 11, Voyager 1 and 2 and the Cassini-Huygen mission. Cassini entered into orbit around Saturn on July 1, 2004 and continues to send back information about the planet, its ring and the many moons of Saturn. </p>
+            </div>
+
+            
+        </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

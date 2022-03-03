@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/AllInfo/Main.css'>
+    <title>Earth</title>
+    
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted >
+        <source src="/videos/Mercury.mp4" type="video/mp4">
+    </video>
+
+    <div class="heading">
+        <h1 class="h1">Earth</h1>
+    </div>
+
+    <div class="main-text">
+        <div>
+            <h2 class="heading-text">About</h2>
+            <p class="about-text">
+                The Earth is our home planet and the only one known where life exists. It has many names such as Gaia, Tellus, and even “the world.” Whatever we call it, it sure is an interesting one.
+                <br>
+                The Earth is the largest terrestrial planet and the fifth-largest overall. It is the third planet from the Sun, with an average distance of 150 million km (93 million mi). This is just the perfect distance, not too close but also not too far from the Sun. It lies in the habitable zone, the area where the temperature is just enough to allow liquid water on its surface.
+                <br>
+                The Earth has four layers: the inner core, outer core, mantle, and crust. We live on the crust, the thinnest layer of the planet. The surface is 71% water and land only occupies only 29% of it.
+            </p>
+        </div>
+
+        <div style="display: flex; width: 100%;">
+        <div style="padding: 0 3%; width: 40%;">
+            <h1>Facts</h1>
+            <table>
+                <tr>
+                    <td>Mass: </td>
+                    <td>5,972,190,000,000,000 billion kg</td>
+                </tr><tr>
+                    <td>Equatorial Diameter: </td>
+                    <td>12,756 km</td>
+                </tr><tr>
+                    <td>Polar Diameter: </td>
+                    <td>12,714 km</td>
+                </tr><tr>
+                    <td>Equatorial Circumference: </td>
+                    <td>40,030 km</td>
+                </tr><tr>
+                    <td>Known Moons: </td>
+                    <td>1</td>
+                </tr><tr>
+                    <td>Notable Moons: </td>
+                    <td>The Moon</td>
+                </tr><tr>
+                    <td>Orbit Distance: </td>
+                    <td>149,598,262 km (1 AU)</td>
+                </tr><tr>
+                    <td>Orbit Period: </td>
+                    <td>365.26 Earth days</td>
+                </tr><tr>
+                    <td>Surface Temperature: </td>
+                    <td>-88 to 58° C</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fun-facts" style="width: 60%">
+            <h3 style="font-size: 22px;">Interesting facts about the Earth</h3>
+            <button type="button" class="collapsible">The Earth was once believed to be the centre of the universe.</button>
+            <div class="content">
+                <p>For 2000 years ancient astronomers believed that the Earth was static and had other celestial bodies travelling in circular orbits around it. They believed this because of the apparent movement on the Sun and planets in relation to their viewpoint. In 1543, Copernicus published his Sun-centered model of the Solar System which put the Sun at the centre of our solar system. </p>
+            </div>
+
+            <button type="button" class="collapsible">Earth is the only planet not named for a mythological god or goddess.</button>
+            <div class="content">
+                <p> The other seven planets in the solar system were named after Roman gods or goddesses. For the five visible to the naked eye, Mercury, Venus, Mars, Jupiter and Saturn they we named during ancient times. This Roman method was also used after the discovery of Uranus and Neptune. The word “Earth” comes from the Old English word “ertha” meaning ground or land. </p>
+            </div>
+
+            <button type="button" class="collapsible">Earth is the most dense planet in the solar system.</button>
+            <div class="content">
+                <p>The density of Earth differs in each part of the planet – the core, for example, is denser than the Earth’s crust – but the average density of the planet is around 5.52 grams per cubic centimetre. </p>
+            </div>
+
+            <button type="button" class="collapsible">The gravity between the Earth and the Moon causes the tides on Earth.</button>
+            <div class="content">
+                <p>This effect on the Moon means it is tidally locked to Earth – its rotation period is the same as its orbit time so it always presents the same face to Earth. </p>
+            </div>
+
+            <button type="button" class="collapsible">Earth has a very powerful magnetic field. </button>
+            <div class="content">
+                <p>This field protects the planet from the effects of solar winds and is believed to be a result of the nickel-iron core of the planet combined with its rapid rotation. </p>
+            </div>
+
+            <button type="button" class="collapsible">The Earth has an Ozone Layer which protects it from harmful solar radiation</button>
+            <div class="content">
+                <p>  This shell is a special type of oxygen that absorbs most of the Sun’s powerful UV rays.</p>
+            </div>
+
+            <button type="button" class="collapsible">Earth has one of the most circular orbits of all the eight planets</button>
+            <div class="content">
+                <p>Its axis of rotation is tilted 23.4° away from the perpendicular of its orbital plane, which produces the seasons we experience. </p>
+            </div>
+
+            
+        </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

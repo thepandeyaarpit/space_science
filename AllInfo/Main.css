@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab&display=swap');
+body{
+    font-family: 'Poppins';
+}
+#background-video {
+    width: 100vw;
+    height: 100vh !important;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.h1{
+    text-align: center;
+    font-size: 8rem;
+    margin-top: 20%;
+    color: #fff;   
+}
+.main-text{
+    background-color: white; margin-top: 12%; width: 100%;
+}
+.heading-text{
+    text-align: center; font-size: 45px;
+}
+.about-text{
+    font-size: 20px;
+    padding: 3%;
+}
+.table-form{
+    padding: 0 3%;
+}
+
+
+/* Collapse */
+.fun-facts{
+    padding: 0 3%;
+}
+
+.collapsible {
+    /* background-color: #777; */
+    color: #777;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 19px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(219, 219, 219);
+    color: #000;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size: 17px;
+    /* background-color: #f1f1f1; */
+  }
+

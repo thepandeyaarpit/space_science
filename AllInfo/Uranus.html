@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/AllInfo/Main.css'>
+    <title>Uranus</title>
+    
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted >
+        <source src="/videos/Uranus.mp4" type="video/mp4">
+    </video>
+
+    <div class="heading">
+        <h1 class="h1">Uranus</h1>
+    </div>
+
+    <div class="main-text">
+        <div>
+            <h2 class="heading-text">About</h2>
+            <p class="about-text">
+                Mercury has been known for a long time because it is visible to the naked eye. Galileo Galilei made the first telescopic observation of this small planet in the 17th century. It was named after the swift Roman god of commerce.
+                <br>
+                Mercury is the closest planet to the Sun. It lies at an average distance of about 58 million kilometers (36 million miles). In terms of the Earth-Sun distance, it is 0.4 AU. Measuring around 4,880 km (3,032 mi) across, Mercury is the smallest of all the eight planets. It is 2.6x smaller than our planet and is just slightly bigger than the Earth’s Moon.
+            </p>
+        </div>
+
+        <div style="display: flex; width: 100%;">
+        <div style="padding: 0 3%; width: 40%;">
+            <h1>Facts</h1>
+            <table>
+                <tr>
+                    <td>Mass: </td>
+                    <td>86,810,300,000,000,000 billion kg (14.536 x Earth)</td>
+                </tr><tr>
+                    <td>Equatorial Diameter: </td>
+                    <td>51,118 km</td>
+                </tr><tr>
+                    <td>Polar Diameter: </td>
+                    <td>49,946 km</td>
+                </tr><tr>
+                    <td>Equatorial Circumference: </td>
+                    <td>159,354 km</td>
+                </tr><tr>
+                    <td>Known Moons: </td>
+                    <td>27</td>
+                </tr><tr>
+                    <td>Notable Moons: </td>
+                    <td>Oberon, Titania, Miranda, Ariel & Umbriel</td>
+                </tr><tr>
+                    <td>Orbit Distance: </td>
+                    <td>2,870,658,186 km (19.22 AU)</td>
+                </tr><tr>
+                    <td>Orbit Period: </td>
+                    <td>30,687.15 Earth days (84.02 Earth years)</td>
+                </tr><tr>
+                    <td>Surface Temperature: </td>
+                    <td>-197 °C</td>
+                </tr><tr>
+                    <td>First Record: </td>
+                    <td>March 13th 1781</td>
+                </tr><tr>
+                    <td>Recorded By: </td>
+                    <td>William Herschel</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fun-facts" style="width: 60%">
+            <h3 style="font-size: 22px;">Interesting facts about the Moon</h3>
+            <button type="button" class="collapsible">Uranus rotates on its axis once every 17 hours and 14 minutes.</button>
+            <div class="content">
+                <p>Like Venus, it turns in a retrograde direction which is opposite to the direction Earth and the other six planets turn.</p>
+            </div>
+
+            <button type="button" class="collapsible">It takes Uranus 84 Earth days to orbit the Sun.</button>
+            <div class="content">
+                <p> Its axis is at 98 degrees, which means it almost lies sideways as it orbits the Sun. This means that the north and south poles of Uranus lie near where the equator is on Earth. During parts of its orbit one or other of the poles directly face the Sun which means the planet gets around 42 years of direct sunlight followed by 42 years of darkness.</p>
+            </div>
+
+            <button type="button" class="collapsible">A collision may have caused the unusual tilt of Uranus.</button>
+            <div class="content">
+                <p>The theory is that an Earth-sized planet may have collided with Uranus which forced its axis to drastically shift.</p>
+            </div>
+
+            <button type="button" class="collapsible">Uranus wind speeds can reach up to 900 km per hour.</button>
+            <div class="content">
+                <p> This is roughly 560 miles per hour.</p>
+            </div>
+
+            <button type="button" class="collapsible">The mass of Uranus is about 14.5 times the mass of Earth</button>
+            <div class="content">
+                <p>making it the lightest of the four gas giants of the outer solar system.</p>
+            </div>
+
+            <button type="button" class="collapsible">Uranus is often referred to as the “ice giant”.</button>
+            <div class="content">
+                <p>While it has a hydrogen and helium upper layer like the other gas giants, Uranus also has an icy mantle which surrounds its rock and iron core. The upper atmosphere of water, ammonia and methane ice crystals gives Uranus its distinctive pale blue color.</p>
+            </div>
+
+            <button type="button" class="collapsible">Uranus is the coldest planet in the solar system. </button>
+            <div class="content">
+                <p>The minimum surface temperature on Uranus is -224°C – making it the coldest of the eight planets. Its upper atmosphere is covered with a haze made mostly of methane which hides the storms taking place in its cloud decks.</p>
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

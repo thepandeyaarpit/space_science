@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/AllInfo/Main.css'>
+    <title>Mercury</title>
+    
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted >
+        <source src="/videos/Mercury.mp4" type="video/mp4">
+    </video>
+
+    <div class="heading">
+        <h1 class="h1">Mercury</h1>
+    </div>
+
+    <div class="main-text">
+        <div>
+            <h2 class="heading-text">About</h2>
+            <p class="about-text">
+                Mercury has been known for a long time because it is visible to the naked eye. Galileo Galilei made the first telescopic observation of this small planet in the 17th century. It was named after the swift Roman god of commerce.
+                <br>
+                Mercury is the closest planet to the Sun. It lies at an average distance of about 58 million kilometers (36 million miles). In terms of the Earth-Sun distance, it is 0.4 AU. Measuring around 4,880 km (3,032 mi) across, Mercury is the smallest of all the eight planets. It is 2.6x smaller than our planet and is just slightly bigger than the Earth’s Moon.
+            </p>
+        </div>
+
+        <div style="display: flex; width: 100%;">
+        <div style="padding: 0 3%; width: 40%;">
+            <h1>Facts</h1>
+            <table>
+                <tr>
+                    <td>Mass: </td>
+                    <td>330,104,000,000,000 billion kg (0.055 x Earth)</td>
+                </tr><tr>
+                    <td>Equatorial Diameter: </td>
+                    <td>4,879 km</td>
+                </tr><tr>
+                    <td>Polar Diameter: </td>
+                    <td>4,879 km</td>
+                </tr><tr>
+                    <td>Equatorial Circumference: </td>
+                    <td>15,329 km</td>
+                </tr><tr>
+                    <td>Known Moons: </td>
+                    <td>None</td>
+                </tr><tr>
+                    <td>Notable Moons: </td>
+                    <td>None</td>
+                </tr><tr>
+                    <td>Orbit Distance: </td>
+                    <td>57,909,227 km (0.39 AU)</td>
+                </tr><tr>
+                    <td>Orbit Period: </td>
+                    <td>	87.97 Earth days</td>
+                </tr><tr>
+                    <td>Surface Temperature: </td>
+                    <td>-173 to 427°C</td>
+                </tr><tr>
+                    <td>First Record: </td>
+                    <td>14th Century BC</td>
+                </tr><tr>
+                    <td>Recorded By: </td>
+                    <td>Assyrian astronomers</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fun-facts" style="width: 60%">
+            <h3 style="font-size: 22px;">Interesting facts about the Moon</h3>
+            <button type="button" class="collapsible">A year in Mercury is 88 days, yet a Mercury day is 176 Earth days.</button>
+            <div class="content">
+                <p> Mercury is nearly tidally locked to the Sun – also known as a gravitational lock – and over time this has slowed the rotation of the planet to almost match its orbit around the Sun.</p>
+            </div>
+
+            <button type="button" class="collapsible">Mercury orbits so quickly around the Sun that early civilizations believed it was actually two different stars</button>
+            <div class="content">
+                <p>one which appeared in the morning and another which appeared in the evening.</p>
+            </div>
+
+            <button type="button" class="collapsible">Mercury is the smallest planet in the solar system</button>
+            <div class="content">
+                <p>with a diameter of 4,879 km and is one of five planets that is visible to the naked eye</p>
+            </div>
+
+            <button type="button" class="collapsible">After the Earth, Mercury is the second densest planet.</button>
+            <div class="content">
+                <p> Despite its small size, Mercury is very dense because it is composed mainly of heavy metals and rock – the main characteristic of terrestrial planets.</p>
+            </div>
+
+            <button type="button" class="collapsible">Mercury is named after the messenger of the Roman gods</button>
+            <div class="content">
+                <p>who is also known as Hermes in Greek mythology. This is because of the speed in which Mercury orbits the Sun and the speed with which Mercury the Roman deity was able to deliver messages.</p>
+            </div>
+
+            <button type="button" class="collapsible">Mercury has no moons or rings</button>
+            <div class="content">
+                <p>because of its low gravity and lack of atmosphere.</p>
+            </div>
+
+            <button type="button" class="collapsible">Mercury does not experience any seasons</button>
+            <div class="content">
+                <p> The axis of Mercury has the smallest tilt of all other planets, and this results in a lack of seasons on its surface.</p>
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/AllInfo/Main.css'>
+    <title>Neptune</title>
+</head>
+<body>
+    
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="/videos/Neptune.mp4" type="video/mp4">
+    </video>
+
+    <div class="heading">
+        <h1 class="h1">Neptune</h1>
+    </div>
+
+
+    <div class="main-text">
+        <div>
+            <h2 class="heading-text">About</h2>
+            <p class="about-text">
+                Neptune is the eighth planet and the farthest from the Sun. At 4.5 billion km (2.8 billion miles), it is 30 times as distant as the Earth is from the Sun. It was named after the god of the sea in Roman mythology.
+                <br>
+                The astronomer Urbain Le Verrier made mathematical predictions about Neptune’s existence. Using his calculations, Johann Galle discovered the planet through a telescope in September 1846. Just days later, its largest moon, Triton, was also discovered. So far, 14 moons are known to orbit this planet. It also has a ring system.
+            </p>
+        </div>
+
+        <div style="display: flex; width: 100%;">
+
+        <div style="padding: 0 3%; width: 40%;">
+            <h1>Facts</h1>
+            <table>
+                <tr>
+                    <td>Mass: </td>
+                    <td>102,410,000,000,000,000 billion kg (17.15x Earth)</td>
+                </tr>
+                <tr>
+                    <td>Equatorial Diameter: </td>
+                    <td>49,528 km</td>
+                </tr>
+                <tr>
+                    <td>Polar Diameter: </td>
+                    <td>48,682 km</td>
+                </tr>
+                <tr>
+                    <td>Equatorial Circumference: </td>
+                    <td>155,600 km</td>
+                </tr>
+                <tr>
+                    <td>Known Moons: </td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Notable Moons: </td>
+                    <td>Triton</td>
+                </tr>
+                <tr>
+                    <td>Known Rings: </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Orbit Distance: </td>
+                    <td>4,498,396,441 km (30.10 AU)</td>
+                </tr>
+                <tr>
+                    <td>Orbit Period: </td>
+                    <td>60,190.03 Earth days (164.79 Earth years)</td>
+                </tr>
+                <tr>
+                    <td>Surface Temperature: </td>
+                    <td>-201 °C</td>
+                </tr>
+                <tr>
+                    <td>First Record: </td>
+                    <td>September 23rd 1846</td>
+                </tr>
+                <tr>
+                    <td>Recorded By: </td>
+                    <td>Urbain Jean Joseph Le Verrier & Johann Galle</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fun-facts" style="width: 60%">
+            <h3 style="font-size: 22px;">Interesting facts about the Moon</h3>
+            <button type="button" class="collapsible">It takes Neptune 164.8 Earth years to orbit the Sun.</button>
+            <div class="content">
+                <p>On 11 July 2011, Neptune completed its first full orbit since its discovery in 1846.</p>
+            </div>
+    
+            <button type="button" class="collapsible">Neptune is the Roman God of the Sea.</button>
+            <div class="content">
+                <p>In Greek, Neptune is called Poseidon. </p>
+            </div>
+    
+            <button type="button" class="collapsible">Neptune has the second largest gravity of any planet</button>
+            <div class="content">
+                <p> in the solar system – second only to Jupiter.</p>
+            </div>
+    
+            <button type="button" class="collapsible"> The orbit path of Neptune is approximately 30 astronomical units (AU) from the Sun.</button>
+            <div class="content">
+                <p>This means it is around 30 times the distance from the Earth to the Sun.</p>
+            </div>
+    
+            <button type="button" class="collapsible">Neptune spins very quickly on its axis.</button>
+            <div class="content">
+                <p>The planets equatorial clouds take 18 hours to complete one rotation. The reason this happens is that Neptune does not have a solid body.</p>
+            </div>
+    
+            <button type="button" class="collapsible">Neptune also has a second storm called the Small Dark Spot. </button>
+            <div class="content">
+                <p> This storm is around the same size as Earth’s moon.</p>
+            </div>
+    
+            <button type="button" class="collapsible">The climate on Neptune is extremely active.</button>
+            <div class="content">
+                <p>In its upper atmosphere, large storms sweep across it and high-speed solar winds track around the planet at up to 1,340 km per second. The largest storm was the Great Dark Spot in 1989 which lasted for around five years.</p>
+            </div>
+    
+        </div>
+        </div>
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
